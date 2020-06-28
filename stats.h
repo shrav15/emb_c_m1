@@ -21,8 +21,16 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
-
+/* Add Your Declarations and Function Comments here  
+void print_array(unsigned char *ptr,unsigned int size)
+float find_mean(unsigned char *ptr,unsigned int size)
+unsigned char find_maximum(unsigned char *ptr,unsigned int size)
+float find_median(unsigned char *ptr,unsigned int size)
+void sort_array(unsigned char *ptr,unsigned int size)
+unsigned char find_minimum(unsigned char *ptr,unsigned int size)
+void print_statistics(float meadian,float mean,unsigned char maximum,
+unsigned char minimum)
+*/
 /**
  * @brief <Add Brief Description of Function Here>
  *

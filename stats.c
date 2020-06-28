@@ -36,8 +36,29 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
+  float mean =find_mean( test,SIZE);
+  float meadian=find_median( test,SIZE);
+  unsigned char maximum=find_maximum(test,SIZE);
+  unsigned char minimum=find_minimum(test,SIZE);
+
   /* Statistics and Printing Functions Go Here */
+  print_statistics(mean, meadian, minimum, maximum);
+  printf("\narray before sorting \n");
+  print_array( test,SIZE);
+  printf("\narray after sorting in descending order \n");
+  sort_array( test,SIZE);
+  print_array(test,SIZE);
 
 }
 
-/* Add other Implementation File Code Here */
+/* Add other Implementation File Code Here 
+void print_array(unsigned char *ptr,unsigned int size)
+float find_mean(unsigned char *ptr,unsigned int size)
+unsigned char find_maximum(unsigned char *ptr,unsigned int size)
+float find_median(unsigned char *ptr,unsigned int size)
+void sort_array(unsigned char *ptr,unsigned int size)
+unsigned char find_minimum(unsigned char *ptr,unsigned int size)
+void print_statistics(float meadian,float mean,unsigned char maximum,
+unsigned char minimum)
+
+*/
